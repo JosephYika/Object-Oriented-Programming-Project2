@@ -9,3 +9,8 @@ The content of Prescription can be sorted in various ways and total cost can be 
 The partial UML class diagram below shows the underlying data model you should use to achieve this scenario:
 
 ![](Hospital%20Booking%20System/Images/UML2.png)
+
+
+![](Hospital%20Booking%20System/Images/Table.png)
+
+![](Hospital%20Booking%20System/Images/table2.png)
