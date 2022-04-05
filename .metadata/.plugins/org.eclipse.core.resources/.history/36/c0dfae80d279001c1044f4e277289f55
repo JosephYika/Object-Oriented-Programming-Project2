@@ -1,0 +1,28 @@
+package assessment2;
+
+/**
+ * Date is associated with a prescription 
+ * @author Józef
+ *
+ */
+public class Date {
+	
+	//FIELDS
+	private int day;
+	private int month;
+	private int year;
+	
+	
+	//CONSTRUCTORS
+	public Date(int day, int month, int year) {
+		
+		this.day = day;
+		this.month = month;
+		this.year = year;
+	}
+	
+	
+	
+	//METHODS
+
+}

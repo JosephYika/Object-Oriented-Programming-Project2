@@ -1,0 +1,59 @@
+package assessment2;
+
+/**
+ * An abstract class for Doctor. 
+ * A doctor has a doctorID and name. 
+ * It also has a method to generate the ID of a doctor. 
+ * @author Józef 
+ *
+ */
+public abstract class Doctor implements Comparable<Doctor>{
+
+	
+	//FIELDS
+	private int doctorID ;
+	private Name doctorName;
+	
+	
+	
+	
+	//CONSTRUCTORS
+	public Doctor(Name doctorName, int doctorID) {
+		this.doctorID = doctorID;
+		this.doctorName = doctorName;
+	}
+
+
+
+
+	public int getDoctorID() {
+		return doctorID;
+	}
+
+
+
+
+	public void setDoctorID(int doctorID) {
+		this.doctorID = doctorID;
+	}
+
+
+
+
+	public Name getDoctorName() {
+		return doctorName;
+	}
+
+
+
+
+	public void setDoctorName(Name doctorName) {
+		this.doctorName = doctorName;
+	}
+	
+	
+	//METHODS 
+	public abstract String generateDoctorID();
+	
+	
+}

@@ -1,0 +1,86 @@
+package assessment2;
+
+/**
+ * JuniorDoctor class is a child of Doctor 
+ * It has to implement all of the methods from Doctor and Comparable interface, because 
+ * Doctor implements this interface. 
+ * It also has to implement the constructor.
+ * Junior Doctor is assigned to a single team and has an ID that starts with J followed by 4 digits
+ * @author Józef
+ *
+ */
+public class JuniorDoctor extends Doctor{
+
+	
+	//FIELDS
+	
+	/**
+	 * Instance variable teamAssigned represents the junior doctors' team
+	 */
+	private String teamAssigned;
+	
+	
+	
+
+	//CONSTRUCTORS
+	/**
+	 * @param doctorName represents the name of a doctor
+	 * @param doctorID represents doctors' ID
+	 */
+	public JuniorDoctor(Name doctorName, int doctorID) {
+		super(doctorName, doctorID,salary);
+		
+		
+	}
+	
+	//METHODS
+	/**
+	 * @return doctors' salary
+	 */
+	public int getSalary() {
+		return salary;
+	}
+
+	/**
+	 * @param salary sets the salary of a doctor
+	 */
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	/**
+	 * Compares doctors based on their monthly salary 
+	 * 
+	 */
+	
+
+	/**
+	 * 
+	 * @return assigned team
+	 */
+	public String getTeamAssigned() {
+		return teamAssigned;
+	}
+
+	/**
+	 * @param teamAssigned sets the assigned teams
+	 */
+	public void setTeamAssigned(String teamAssigned) {
+		this.teamAssigned = teamAssigned;
+	}
+
+	/**
+	 * Generates Doctors' ID 
+	 * ID start with J ( Junior ) followed by 4 digit number
+	 */
+	@Override
+	public String generateDoctorID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	//METHODS
+	
+}

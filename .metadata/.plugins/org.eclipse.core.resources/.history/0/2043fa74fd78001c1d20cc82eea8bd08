@@ -1,0 +1,68 @@
+package assessment2;
+
+import java.util.Random;
+
+/**
+ * Administrator has a name and can generate patients' IDs
+ * 
+ * 
+ * @author Józef
+ */
+public class Administrator {
+	
+	//FIELDS
+	private String name;
+	private Patient patient;
+	
+	
+	//CONSTRUCTORS
+	public Administrator() {
+		
+		this("Alice");
+	}
+	
+	public Administrator(String name) {
+		
+		this.name = name;
+	}
+	
+	
+	// METHODS 
+	
+	public String patientID_Generator() {
+		/*
+		 * Random ID generator A 4 digit number is generated and 'P' letter is added to
+		 * the number each time it is generated. P stands for Patient. The same approach
+		 * is used for Doctors' ID generator.
+		 * 
+		 */
+		String numbers = "0123456789";
+		String patientID;
+		Random rand = new Random();
+		
+
+		char[] itirateNumbers = new char[4];
+
+		/*
+		 * Under each index ( From 0 - 3) we assign a value from the 'patientID' String.
+		 * charAt returns the number at the specified Index, nextInt returns the number
+		 * between the specified (in the bracket) values. In this case we pass the
+		 * length of our 'patientID' variable, which is 10 So in this case our specified
+		 * index in the charAt is a random integer from 0-9. A very simple approach, but
+		 * it works.
+		 * 
+		 */
+		
+		for (int i = 0; i < itirateNumbers.length; i++) {
+			itirateNumbers[i] = numbers.charAt(rand.nextInt(numbers.length()));
+			patientID = patientID + itirateNumbers[i];
+		}
+		
+		return "P" + itirateNumbers;
+		
+	}
+	
+	
+	
+
+}

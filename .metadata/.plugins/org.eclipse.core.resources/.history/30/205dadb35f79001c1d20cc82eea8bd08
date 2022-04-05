@@ -1,0 +1,26 @@
+package assessment2;
+
+/**
+ * A Medication has unique ID , name and price .
+ * One medication can have different price 
+ * (e.g. Paracetamol for children is £3.50, but same paracetamol for adults is £3.80). 
+ * Medication are comparable.They can be sorted into a natural order. 
+ * They should firstly be compared by Medication id, if these are the same, then by price.
+ * 
+ * @author Józef
+ *
+ */
+public class Medication {
+	
+	//FIELDS
+	
+	
+	
+	//CONSTRUCTORS
+	
+	
+	
+	
+	//METHODS
+
+}

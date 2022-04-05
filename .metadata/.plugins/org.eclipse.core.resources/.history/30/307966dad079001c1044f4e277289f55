@@ -1,0 +1,31 @@
+package assessment2;
+
+import java.util.List;
+
+/**
+ * 
+ * A Prescription is for an appointment and has a unique id. 
+ * It consists of a list of medications, and the doctor that made the prescription.
+ * It has a set of methods to add/remove and retrieve a medication so that it can be modified or printed on a receipt, for example. 
+ * 
+ * @author Józef
+ *
+ */
+public class Prescription {
+	
+	//FIELDS
+	private int presriptionID;
+	private List<Medication> medications;
+	private Appointment appointment;
+	private Doctor doctor;
+	
+	
+	//CONSTRUCTORS
+	
+	
+	
+	
+	//METHODS
+	
+
+}

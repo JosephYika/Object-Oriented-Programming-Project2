@@ -1,0 +1,29 @@
+package assessment2;
+
+/**
+ * A Discounted Medication is a Medication with a discount rate applied. The discount rate 
+ * is between 0 and 1.0, with 0.1 being a 10% discount, 0.2 being a 20% discount
+ * 
+ * @author Józef
+ *
+ */
+public class DiscountedMedication extends Medication{
+	
+	//FIELDS
+	
+	/**
+	 * Variable discountedPrice is a discounted price of a orignal price 
+	 */
+	private double discountedPrice;
+	
+	
+	// CONSTRUCTORS 
+	public DiscountedMedication(int medicationID, String medicationName, double price,double discountedPrice) {
+		super( medicationID, medicationName,price);
+		this.discountedPrice = discountedPrice;
+	}
+	
+	
+	//METHODS
+
+}

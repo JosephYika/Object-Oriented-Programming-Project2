@@ -1,0 +1,156 @@
+package assessment2; // We are working in the package 'assessmnet2' under HospitalBookingSystem folder
+
+import java.util.Random;
+
+/**
+ * When making an appointment to visit the hospital, 
+ * a Patient with Name and patientID makes an Appointment with a Doctor.
+ * A patient has an age and a description (toString method). 
+ * A patient can also gain rewards (points) if he/she is a child (less than 18 ) and 
+ * an adult older than 65. 
+ * 
+ * @author Józef 
+ */
+
+
+public class Patient {
+	
+	
+	//FIELDS 
+	/**
+	 * Instance variable patientID represents the ID of a patient 
+	 * Instance variable patientName represents the name of a patient
+	 * Instance variable age represents the age of a patient
+	 */
+	private String patientID; 
+	private Name patientName;
+	private int age;
+	
+	
+	
+	
+	
+	//CONSTRUCTORS
+	
+	/**
+	 * Accepts three parameters ( one of which is a parameter of class data type Name)
+	 * @param patientID represents the ID of a patient
+	 * @param patientName represent the name ( first Name and Last name ) of a patient
+	 * @param age represents the age of a patient
+	 */
+	public Patient ( String patientID, Name patientName, int age) {
+		
+		this.patientID = patientID;
+		this.patientName = patientName;
+		this.age = age;
+	}
+
+
+
+	//METHODS
+
+	/**
+	 * Returns the ID of a patient 
+	 * @return the ID of a patient 
+	 */
+	public String getPatientID() {
+		return patientID;
+	}
+
+
+
+
+
+	/**
+	 * Sets the ID of a patient 
+	 * @param patientID represents the patients' ID
+	 */
+	public void setPatientID(String patientID) {
+		this.patientID = patientID;
+	}
+
+
+
+
+
+	/**
+	 * Returns the name of a patient
+	 * @return the name of a patient 
+	 */
+	public Name getPatientName() {
+		return patientName;
+	}
+
+
+
+
+
+	/**
+	 * Sets the name of a patient 
+	 * @param patientName represents the patients' name 
+	 */
+	public void setPatientName(Name patientName) {
+		this.patientName = patientName;
+	}
+
+
+
+
+
+	/**
+	 * Returns the age of a patient 
+	 * @return the age of a patient 
+	 */
+	public int getAge() {
+		return age;
+	}
+
+
+
+
+
+	/**
+	 * Sets the age of a patient 
+	 * @param age represents the age of a patient
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void patientID_Generator() {
+		/*
+		 * Random ID generator 
+		 * A 4 digit number is generated and 'P' letter is added to the number each time it is
+		 * generated. P stands for Patient. The same approach is used for Doctors' ID generator.
+		 * 
+		 */
+		String numbers = "0123456789";  
+		
+		Random rand = new Random();
+		
+		char[] itirateNumbers = new char[4];
+		
+		/*
+		 *  Under each index ( From 0 - 3) we assign a value from the 'numbers' String
+		 *  charAt returns the number at the specified Index
+		 *  nextInt returns the number between the specified (in the bracket) values.
+		 *  In this case we pass the length of our 'numbers' variable, which is 10
+		 *  So in this case our specified index in the charAt is a random integer from 0-9.
+		 *  A very simple approach, but it works. 
+		 *  
+		 */
+		System.out.print("P");
+		for (int i = 0; i < itirateNumbers.length; i++) {
+			itirateNumbers[i] = numbers.charAt(rand.nextInt(numbers.length()));
+			System.out.print(itirateNumbers[i]);
+		}
+	}
+
+    
+	@Override
+	public String toString() {
+		return "Patient [Patient ID: " + patientID + ", Patient Full Name: " + patientName + ", Patient Age: " + age + "]";
+	}
+	
+	
+}

@@ -1,0 +1,55 @@
+package assessment2;
+
+import java.util.Objects;
+
+/**
+ * 
+ * An appointment is made by a patient 
+ * 
+ * @author Józef
+ * 
+ *
+ */
+public class Appointment {
+	
+	// FIELDS
+	private int appointmentID;
+	private Patient patient;
+	private Date date;
+	private boolean completed;
+	
+	
+	
+	
+	//CONSTRUCTORS
+	public Appointment (int appointmentID, Patient patient, Date date, boolean completed) {
+		this.appointmentID = appointmentID;
+		this.patient = patient;
+		this.date = date;
+		this.completed = completed; 
+		
+	}
+
+	//METHODS 
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Appointment other = (Appointment) obj;
+		return Objects.equals(date, other.date) && Objects.equals(patient, other.patient);
+	}
+	
+	
+	
+
+	
+	
+	
+	
+
+}

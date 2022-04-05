@@ -1,0 +1,12 @@
+package assessment2;
+
+/**
+ * 
+ * Appointments - a list of appointments
+ * 
+ * @author Józef
+ *
+ */
+public class Appointments {
+
+}

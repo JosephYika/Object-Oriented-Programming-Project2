@@ -1,0 +1,30 @@
+package assessment2;
+
+/**
+ * 
+ * ConsultantDoctor can be a team leader or not
+ * Consultant Doctor has some kind of specialisation 
+ * Consultant Doctor has an ID that start with C followed by a 4 digit number
+ * @author Józef
+ *
+ */
+public class ConsultantDoctor extends Doctor{
+
+	
+	
+	//FIELDS
+	private boolean teamLeader;
+	private String specialisation;
+	
+	
+	//CONSTRUCTOR
+	public ConsultantDoctor(Name doctorName, int doctorID, boolean teamLeader, String specialistation) {
+		super(doctorName, doctorID);
+		this.teamLeader = teamLeader;
+		this.specialisation = specialisation;
+		
+	}
+	
+	
+	//METHOD 
+}

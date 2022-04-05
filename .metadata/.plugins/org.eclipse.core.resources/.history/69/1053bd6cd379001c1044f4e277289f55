@@ -1,0 +1,31 @@
+package assessment2;
+
+/**
+ * 
+ * An appointment is made by a patient 
+ * 
+ * @author Józef
+ * 
+ *
+ */
+public class Appointment {
+	
+	// FIELDS
+	private int appointmentID;
+	private Patient patient;
+	private Date date;
+	private boolean completed;
+	
+	
+	
+	
+	//CONSTRUCTORS
+	
+	
+	
+	//METHODS
+	
+	
+	
+
+}

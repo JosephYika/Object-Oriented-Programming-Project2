@@ -1,0 +1,51 @@
+package assessment2;
+
+/**
+ * JuniorDoctor class is a child of Doctor 
+ * It has to implement all of the methods from Doctor and Comparable interface, because 
+ * Doctor implements this interface. 
+ * It also has to implement the constructor. 
+ * @author josep
+ *
+ */
+public class JuniorDoctor extends Doctor{
+
+	
+	//FIELDS
+	
+	private String teamAssigned;
+	
+	//CONSTRUCTORS
+	public JuniorDoctor(Name doctorName, int doctorID) {
+		super(doctorName, doctorID);
+		
+	}
+	
+	//METHODS
+	
+
+	@Override
+	public int compareTo(Doctor o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String getTeamAssigned() {
+		return teamAssigned;
+	}
+
+	public void setTeamAssigned(String teamAssigned) {
+		this.teamAssigned = teamAssigned;
+	}
+
+	@Override
+	public String generateDoctorID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	//METHODS
+	
+}

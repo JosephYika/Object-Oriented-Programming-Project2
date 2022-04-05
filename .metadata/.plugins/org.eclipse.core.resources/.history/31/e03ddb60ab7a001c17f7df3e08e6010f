@@ -1,0 +1,37 @@
+package assessment2;
+
+import java.util.List;
+
+/**
+ * 
+ * Appointments - a list of appointments
+ * 
+ * @author Józef
+ *
+ */
+public class Appointments {
+	
+	//FIELDS
+	/**
+	 * Variable appointments represents the list of appointments
+	 */
+	private List<Appointment> appointments;
+	
+	
+	//CONSTRUCTORS
+	public Appointments(List<Appointment> appointments) {
+		this.appointments = appointments;
+	}
+	
+	
+	
+	//METHODS
+	public Appointment getAppointmentByID (int appointment, Patient patient, Date date, boolean check) {
+		Appointment app1 = new Appointment(appointment,patient , date, false);
+		return app1;
+		
+		
+	}
+	
+
+}

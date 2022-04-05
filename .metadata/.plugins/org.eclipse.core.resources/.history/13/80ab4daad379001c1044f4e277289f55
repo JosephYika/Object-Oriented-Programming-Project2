@@ -1,0 +1,92 @@
+package assessment2;
+
+import java.util.Objects;
+
+/**
+ * 
+ * An appointment is made by a patient 
+ * 
+ * @author Józef
+ * 
+ *
+ */
+public class Appointment {
+	
+	// FIELDS
+	private int appointmentID;
+	private Patient patient;
+	private Date date;
+	private boolean completed;
+	
+	
+	
+	
+	//CONSTRUCTORS
+	public Appointment (int appointmentID, Patient patient, Date date, boolean completed) {
+		this.appointmentID = appointmentID;
+		this.patient = patient;
+		this.date = date;
+		this.completed = completed; 
+		
+	}
+
+	//METHODS 
+
+	public int getAppointmentID() {
+		return appointmentID;
+	}
+
+	public void setAppointmentID(int appointmentID) {
+		this.appointmentID = appointmentID;
+	}
+
+	public Patient getPatient() {
+		return patient;
+	}
+
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public boolean isCompleted() {
+		return completed;
+	}
+
+	public void setCompleted(boolean completed) {
+		this.completed = completed;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Appointment other = (Appointment) obj;
+		return Objects.equals(date, other.date) && Objects.equals(patient, other.patient);
+	}
+
+	@Override
+	public String toString() {
+		return "Appointment [appointmentID=" + appointmentID + ", patient=" + patient + ", date=" + date
+				+ ", completed=" + completed + "]";
+	}
+
+	
+	
+	
+	
+	
+	
+
+}

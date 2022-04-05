@@ -1,0 +1,10 @@
+package assessment2;
+
+/**
+ * Date is associated with a prescription 
+ * @author Józef
+ *
+ */
+public class Date {
+
+}

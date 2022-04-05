@@ -1,0 +1,31 @@
+package assessment2;
+
+/**
+ * Administrator has a name and can generate patients' IDs
+ * 
+ * 
+ * @author Józef
+ */
+public class Administrator {
+	
+	//FIELDS
+	private String name;
+	
+	
+	//CONSTRUCTORS
+	public Administrator() {
+		
+		this("Alice");
+	}
+	
+	public Administrator(String name) {
+		
+		this.name = name;
+	}
+	
+	
+	// METHODS 
+	
+	
+
+}

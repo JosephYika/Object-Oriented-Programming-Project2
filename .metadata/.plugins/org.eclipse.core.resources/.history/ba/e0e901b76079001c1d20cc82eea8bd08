@@ -1,0 +1,54 @@
+package assessment2;
+
+/**
+ * A Medication has unique ID , name and price .
+ * One medication can have different price 
+ * (e.g. Paracetamol for children is £3.50, but same paracetamol for adults is £3.80). 
+ * Medication are comparable.They can be sorted into a natural order. 
+ * They should firstly be compared by Medication id, if these are the same, then by price.
+ * 
+ * @author Józef
+ *
+ */
+public class Medication {
+	
+	//FIELDS
+	/**
+	 * medicationID is an id of a medication
+	 * medicationName is a name of a medication
+	 * price is a price of a medication in pounds 
+	 */
+	private int medicationID;
+	private String medicationName;
+	private double price;
+	
+	
+	
+	//CONSTRUCTORS
+	/**
+	 * Default constructor with default values
+	 */
+	public Medication () {
+		
+		this(1, "Paracetemol", 3.80);
+	}
+	/**
+	 * Custom constructor that accepts 3 arguments
+	 * @param medicationID is an ID of a medication
+	 * @param medicationName is a name of medication 
+	 * @param price is a price of a medication
+	 */
+	public Medication(int medicationID, String medicationName, double price) {
+		
+		this.medicationID = medicationID;
+		this.medicationName = medicationName;
+		this.price = price;
+		
+	}
+	
+	
+	
+	//METHODS
+	
+
+}

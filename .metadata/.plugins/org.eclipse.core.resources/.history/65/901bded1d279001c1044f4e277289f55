@@ -1,0 +1,76 @@
+package assessment2;
+
+/**
+ * Date is associated with a prescription 
+ * @author Józef
+ *
+ */
+public class Date {
+	
+	//FIELDS
+	/**
+	 * Day  is a day of when prescription was prescribed 
+	 * Month   is a day of when prescription was prescribed  
+	 * Year  is a year of when prescription was prescribed 
+	 */
+	private int day;
+	private int month;
+	private int year;
+	
+	
+	//CONSTRUCTORS
+	/**
+	 * @param day  is a day of when prescription was prescribed 
+	 * @param month  is a month of when prescription was prescribed 
+	 * @param year  is a year of when prescription was prescribed 
+	 */
+	public Date(int day, int month, int year) {
+		
+		this.day = day;
+		this.month = month;
+		this.year = year;
+	}
+
+
+	//METHODS
+	public int getDay() {
+		return day;
+	}
+
+
+	public void setDay(int day) {
+		this.day = day;
+	}
+
+
+	public int getMonth() {
+		return month;
+	}
+
+
+	public void setMonth(int month) {
+		this.month = month;
+	}
+
+
+	public int getYear() {
+		return year;
+	}
+
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Date [day=" + day + ", month=" + month + ", year=" + year + "]";
+	}
+	
+	
+	
+
+	
+
+}
